@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", function() {
 /**
  * Creates a toast, when a toast is already being displayed the new one will wait for all previous toasts to finish.
  * @param {[String]}	text         [The message to be displayed to the user.]
- * @param {[int]}		time         [The amount of time that the message should be displayed in ms. Note: the value 0 will be handled as if it was omitted.]
+ * @param {[int]}	time         [The amount of time that the message should be displayed in ms. Note: the value 0 will be handled as if it was omitted.]
  * @param {[function]}	undoCallback [A callback function that should be executed when the user clicks the undo button.]
  */
 function Toast (text, time, undoCallback) {
