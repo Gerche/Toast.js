@@ -5,22 +5,22 @@
 	<link rel="stylesheet" type="text/css" href="toast.css">
 	<script type="text/javascript" src="toast.js"></script>
 	<script type="text/javascript">
-    var i = 1;
-    function start() {
-        Toast("toast " + i + ": Message send.", 2000);
-        i++;
-        Toast("toast " + i + ": Firmware succesfully updated.", 3000, undo);
-        i++;
-        Toast("toast " + i + ": Try to keep your messages short and to the point, for example: \"Mail send.\"", 6000);
-        i++;
-    }
+	var i = 1;
+	function start() {
+		Toast("toast " + i + ": Message send.", 2000);
+		i++;
+		Toast("toast " + i + ": Firmware succesfully updated.", 3000, undo);
+		i++;
+		Toast("toast " + i + ": Try to keep your messages short and to the point, for example: \"Mail send.\"", 6000);
+		i++;
+	}
 
-    var undo = function (){
-    	alert('action canceled!');
-    }
-    </script>
+	var undo = function (){
+		alert('action canceled!');
+	}
+	</script>
 </head>
 <body>
-    <button onclick="start()">demo-test</button>
+	<button onclick="start()">demo-test</button>
 </body>
 </html>

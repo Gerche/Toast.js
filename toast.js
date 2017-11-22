@@ -49,11 +49,11 @@ function Toast (text, time, undoCallback) {
 
 		// Create new timer
 		var timer = new Timer(function() {
-		    toast.content.style.animationName = "hideToast";
+			toast.content.style.animationName = "hideToast";
 
 			setTimeout(function(){
 				toast.content.outerHTML = null;
-		    	toasts.shift();
+				toasts.shift();
 				if (toasts.length >= 1) {
 					insertToast(toasts[0]);
 				}
@@ -71,20 +71,20 @@ function Toast (text, time, undoCallback) {
 
 // A timer function that supports pause() and resume().
 function Timer(callback, delay) {
-    var timerId, start, remaining = delay;
+	var timerId, start, remaining = delay;
 
-    // Pause the timer
-    this.pause = function() {
-        window.clearTimeout(timerId);
-        remaining -= new Date() - start;
-    };
+	// Pause the timer
+	this.pause = function() {
+		window.clearTimeout(timerId);
+		remaining -= new Date() - start;
+	};
 
-    // Resume the timer
-    this.resume = function() {
-        start = new Date();
-        window.clearTimeout(timerId);
-        timerId = window.setTimeout(callback, remaining);
-    };
+	// Resume the timer
+	this.resume = function() {
+		start = new Date();
+		window.clearTimeout(timerId);
+		timerId = window.setTimeout(callback, remaining);
+	};
 
-    this.resume();
+	this.resume();
 }

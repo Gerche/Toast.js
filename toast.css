@@ -1,8 +1,8 @@
 /* Toast css */
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('https://fonts.googleapis.com/css?family=Roboto:400');
+	font-family: 'Roboto';
+	src: url('https://fonts.googleapis.com/css?family=Roboto:400');
 }
 
 #toastContainer {
@@ -32,37 +32,36 @@
 	right: 0px;
 	bottom: -50px;
 	animation-name: showToast;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
+	animation-duration: 0.8s;
+	animation-fill-mode: forwards;
 }
 
 .toast > span {
 	float: left;
 	overflow: hidden; 
-    white-space: nowrap; 
-    text-overflow: ellipsis;
-    width: calc(100% - 66px);
-
+	white-space: nowrap; 
+	text-overflow: ellipsis;
+	width: calc(100% - 66px);
 }
 
 @keyframes showToast {
-    0% {bottom: -50px;}
-    100% {bottom: 0px;}
+	0% { bottom: -50px; }
+	100% { bottom: 0px; }
 }
 
 @keyframes hideToast {
-    0% {bottom: 0px;}
-    100% {bottom: -50px;}
+	0% { bottom: 0px; }
+	100% { bottom: -50px; }
 }
 
 .undo {
-    float: right;
-    background-color: unset;
-    color: #F64336;
-    border: none;
-    font-size: 17px;
-    font-weight: 500;
-    cursor: pointer;
+	float: right;
+	background-color: unset;
+	color: #F64336;
+	border: none;
+	font-size: 17px;
+	font-weight: 500;
+	cursor: pointer;
 }
 
 .undo:hover {
