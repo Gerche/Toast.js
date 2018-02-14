@@ -7,7 +7,7 @@ To get started first import the script and css:
 
 `<link rel="stylesheet" type="text/css" href="toast.css">`
 
-You can now call the toast() function like below:
+You can now call the toast() function like this:
 
 `Toast("message to display");`
 
