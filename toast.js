@@ -17,7 +17,6 @@ function Toast (text, time, undoCallback) {
 
 	// Create the toast element (html)
 	toast.content = document.createElement("div");
-	var toastText = document.createTextNode(text);
 	toast.content.innerHTML = "<span>" + text + "</span>";
 	toast.content.className = "toast";
 
